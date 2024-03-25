@@ -1,0 +1,109 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of MBM Manipal, Student Team at Manipal Institute of Technology">
+    <meta name="keywords" content="MBM, Manipal, Biomachines Club,Biomachines team">
+    <title>Manipal Biomachines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Add font import -->
+    <link href="https://fonts.googleapis.com/css2?family=Bemirs&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    nav{
+        display: flex;
+        padding: 0% 4%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img{
+        width: 130px;
+    }
+    .nav-links{
+        flex:1;
+        text-align: right;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px 14px;
+        position: relative;
+    }
+    .nav-links ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #377c56;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+    .text-box{
+        width: 90%;
+        color: #fff;
+        position: absolute;
+        top: 25%;
+        left: 50%; /* Adjusted from 20% to 50% */
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .text-box h1{
+        font-size: 50px;
+        font-family: 'Bemirs', cursive;
+    }
+    .text-box p{
+        margin: 10px 0 40px;
+        font-size: 30px;
+        color: #000000;
+    }
+    .violet {
+        color: rgb(43, 67, 71);
+    }
+    .green {
+        color: rgb(68, 134, 68);
+    }
+</style>
+<body>
+   <section class="header">
+     <nav>
+        <a href="index.html"><img src="manipal_biomachines_logo-removebg-preview.png"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Research</a></li>
+                <li><a href="">Achievements</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+     </nav>
+    <div class="text-box">
+        <p>We are</p>
+        <h1><span class="violet">Manipal</span><span class="green">  Bio</span><span class="violet">Machines</span></h1>
+    </div>
+   </section> 
+</body>
+</html>
